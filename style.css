@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&family=Noto+Sans:wght@300;500;600;900&display=swap');
+
+/* 
+font-family: 'Lato', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+ */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: rgb(224, 206, 206); */
+
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    --main-color:#283526;
+    --primary-color:#131111;
+    --button-background:#4b709e;
+    --primary-button-background:#fe7649;
+    --background-color:#eef2f7;
+}
+
+h1, h2 {
+    font-family: Avenir LT Std;
+    color: var(--main-color);
+}
+
+h4 h3 {
+    font-family: muli;
+    color: var(--main-color);
+}
+
+h3{
+    font-weight: 750;
+    font-size: 2.2rem;
+    line-height: 3rem;
+    text-transform: capitalize;
+}
+
+p,
+a,
+li,
+button {
+    font-family: "muli";
+    color: var(--primary-color);
+}
+
+p{
+    font-size: 1.8rem;
+    line-height: 150%;
+    font-style: normal;
+    font-weight: normal;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+}
+
+button {
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    line-height: 3.6rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+
+/* -------------------------------------- OUR MAIN STYLE START HERE --------------------------- */
+
+header{
+    /* position: fixed; */
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    font-family: 'Noto Sans', sans-serif;
+    height: 60px;
+    width: 100%;
+}
+header .bar{
+   font-size: 2.5rem;
+}
+header .food{
+   font-size: 2.5rem;
+}
+header .mail{
+   font-size: 2.5rem;
+   color: black;
+}
+header .mail a{
+   font-size: 2.5rem;
+   color: black;
+}
+
+/* -------------------------------------- OUR SECTION STYLE START HERE --------------------------- */
+
+main{
+    max-width: 85%;
+    margin: auto;
+}
+
+.main__section{
+    display: grid;
+    text-align: center;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 7rem;
+}
+
+@media (width <= 1000px ) {
+    .main__section{
+        grid-template-columns:auto auto auto;
+    }
+    .main__section .first__inner__section img{
+        height: 50%;
+        width: 100%;
+    }
+}
+@media (width <= 700px ) {
+    .main__section{
+        grid-template-columns: auto auto;
+    }
+    .main__section .first__inner__section img{
+        height: 40%;
+        width: 100%;
+    }
+}
+@media (width <= 450px ) {
+    .main__section{
+        grid-template-columns: auto;
+    }
+    .main__section .first__inner__section img{
+        height: 30%;
+        width: 100%;
+    }
+}
+
+
+.main__section .first__inner__section{
+    width: 96%;
+}
+.main__section .first__inner__section img{
+    height: 60%;
+    width: 100%;
+}
+
+.center__style{
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
+    padding: 1rem;
+}
+.center__style1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 200;
+    padding: 1rem;
+}
+
+/* -------------------------------------- OUR SECOND SECTION STYLE START HERE --------------------------- */
+
+.second__section{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+.second__section .page__change{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.second__section .page__change .number__change1{
+    width: 4rem;
+    height: 4rem;
+    padding-top: .8rem;
+    text-align: center;
+    font-size: large;
+}
+.second__section .page__change .number__change1:hover{
+    color: white;
+    background-color: black;
+    font-size: large;
+    /* margin-bottom: 1px; */
+}
+.second__section .page__change .number__change2{
+    width: 4rem;
+    height: 4rem;
+    padding-top: .5rem;
+    text-align: center;
+    color: white;
+    background-color: black;
+    
+}
+.second__section .page__change .number__change2:hover{
+    color: black;
+    background-color: gray;
+    margin-bottom: 1px;
+}
+.second__section .page__change .number__change{
+    width: 4rem;
+    height: 4rem;
+    padding-top: .5rem;
+    text-align: center;
+}
+.second__section .page__change .number__change:hover{
+    color: white;
+    background-color: black;
+    margin-bottom: 1px;
+}
+
+
+.bottom__line{
+    border-bottom: 1px solid #eee;
+    margin-top: 6rem;
+}
+.bottom__line1{
+    border-bottom: 1px solid #eee;
+    margin-top: 10rem;
+}
+.bottom__line2{
+    border-bottom: 1px solid #eee;
+    margin-top: 1rem;
+}
+
+
+/* -------------------------------------- OUR THIRED SECTION STYLE START HERE --------------------------- */
+
+.third__section{
+    margin-top: 9rem;
+}
+.third__section .heading__third__section{
+    text-align: center;
+    font-size: 26px;
+    font-family: 'Noto Sans', sans-serif;
+    padding-bottom: 4rem;
+    font-weight: 500;
+}
+.third__section .heading__third__section1{
+    text-align: center;
+    font-size: 26px;
+    font-family: 'Noto Sans', sans-serif;
+    padding-top: 2rem;
+    font-weight: 500;
+}
+.third__section .img__third__section{
+   display: flex;
+   margin: auto;
+   width: 70%;
+}
+
+.para__third__section1{
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Noto Sans', sans-serif;
+    padding-top: 1.5rem;
+    font-weight: 500;
+}
+.para__third__section{
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Noto Sans', sans-serif;
+    padding-top: 1.5rem;
+    font-weight: 500;
+}
+
+
+/* -------------------------------------- OUR FOOTER STYLE START HERE --------------------------- */
+
+footer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 10rem;
+    margin-bottom: 6rem;
+}
+
+@media (width <= 872px) {
+    footer{
+        grid-template-columns: auto;
+        margin-top: 20px;
+    }
+}
+@media (width <= 407px) {
+    footer{
+        grid-template-columns: auto;
+        margin-top: 20px;
+        width: 407px;
+    }
+}
+
+footer .footer__box {
+    width: 100%;
+}
+footer .footer__box1  {
+    width: 25vw;
+}
+footer .footer__box h1 {
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+    
+}
+footer .footer__box .first__footer__para {
+    margin-top: 3rem;
+    font-size: 1.7rem;
+    width: 100%;
+}
+footer .footer__box .footer__cart { 
+    display: flex;
+}
+footer .footer__box1 .footer__cart { 
+    display: flex;
+}
+.tpmr{
+    margin-top: 3rem;
+}   
+footer .footer__box1 .footer__cart img{ 
+    width: 6rem;
+}
+footer .footer__box1 .footer__cart .footer__img__text{ 
+    margin-left: 2rem;
+    font-weight: 300;
+}
+footer .footer__box .footer__cart img{ 
+    width: 6rem;
+}
+footer .footer__box .footer__cart .footer__img__text{ 
+    margin-left: 2rem;
+    font-weight: 300;
+}
+
+.marg__top{
+    margin-top: 1rem;
+}
+
+.title__tag{
+    margin-left: 5px;
+    background-color: #616161;
+    color: white;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+    width: 6rem;
+}
+.title__tag2{
+    margin-right: 5px;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+    width: 8rem;
+}
+
+.footer__popular__tag__style{
+    display: flex;
+     align-items: center; 
+    margin-top: 2rem; 
+    margin-left: 1.5rem;
+}
+
+.footer__popular__tag{
+    text-align: center;
+    font-size: 1.3rem;
+    color: white;
+}
+
